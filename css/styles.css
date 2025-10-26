@@ -89,6 +89,36 @@ p {
   margin-bottom: 1rem;
 }
 
+/* style.css */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 50px; /* Adjust to navbar height */
+}
+
+#process-modelling {
+  scroll-margin-top: 80px; /* offset for fixed navbar */
+}
+
+#lims {
+  scroll-margin-top: 80px; /* offset for fixed navbar */
+}
+
+#ai {
+  scroll-margin-top: 80px; /* offset for fixed navbar */
+}
+
+#bi {
+  scroll-margin-top: 80px; /* offset for fixed navbar */
+}
+
+#chemi {
+  scroll-margin-top: 80px; /* offset for fixed navbar */
+}
+
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -10141,8 +10171,8 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../assets/img/shutterstock.jpg");
-
+  /* background: url("../assets/img/Background2.png"); */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../assets/img/Final/Background.jpg");
   background-repeat: no-repeat;
   *background-attachment: scroll;
   background-attachment: fixed;
@@ -10732,4 +10762,90 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-weight: 900;
 }
 
+/* Verticals section container */
+.verticals-section {
+  max-width: 1200px;  /* center container */
+  margin: 0 auto;
+  padding: 0 20px;    /* small space from left/right edges */
+}
 
+/* Images - all same size */
+.verticals-section .vertical-img {
+  width: 120%;
+  max-width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-left: 40px; /* shift image slightly to the right */
+}
+
+/* Text column */
+.verticals-section .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically align with image */
+  padding-left: 60px;      /* space between image and text */
+  word-wrap: break-word;    /* prevent overflow */
+}
+
+/* Titles */
+.verticals-section .vertical-title {
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-left: 90px;  /* increased space from image */
+}
+
+/* Intro paragraph */
+.verticals-section .col-md-6 p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+/* Bullet points */
+.verticals-section .vertical-list {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-left: 120px;   /* increased space from image */
+  padding-left: 0;
+  text-align: left;
+}
+
+/* Row spacing */
+.verticals-section .row {
+  margin-bottom: 4rem; /* uniform distance between rows */
+}
+
+/* Ensure text column is vertically centered with image */
+.verticals-section .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .verticals-section .col-md-4,
+  .verticals-section .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .verticals-section .vertical-img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 1rem auto; /* center image on mobile */
+  }
+  .verticals-section .vertical-title,
+  .verticals-section .vertical-list {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
